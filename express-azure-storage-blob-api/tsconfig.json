@@ -1,0 +1,17 @@
+{
+   "extends": "@tsconfig/node-lts/tsconfig.json",
+   "ts-node": {
+      "files": true,
+      "swc": true,
+      "compilerOptions": {}
+   },
+   "compilerOptions": {
+      "outDir": "dist",
+      "baseUrl": ".",
+      "paths": {
+         "@/*": ["./*"]
+      }
+   },
+   "exclude": ["node_modules"],
+   "include": ["./**/*.ts", "./**/*.js"]
+}
